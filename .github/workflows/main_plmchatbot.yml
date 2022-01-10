@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'PLMChatBot'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_ED8DBA7855A547BBBD44293B04E359B0 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6F775E18A3EA4CB189662D85BD9FC1BF }}
           package: .
