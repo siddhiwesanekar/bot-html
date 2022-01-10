@@ -1,0 +1,61 @@
+<html>
+<head>
+<!--<meta charset="ISO-8859-1">-->
+<style>
+     .right span {
+         position:relative;
+         display: inline;
+         margin-left:40%;
+         
+         }
+         .center1{  
+                
+            padding-top: 5%;
+            
+            font-size: 16px;
+            display: inherit;
+            }  
+         .button {
+             border: 2px solid black;
+             padding: 6px 10px;
+             text-align: center;
+             display: inline-block;
+             font-size: 14px;
+             transition-duration: 0.4s;
+            cursor: pointer;
+            margin-left:48%;
+            }
+            .button2:hover {
+             background-color: gray;
+            color: white;
+            }
+
+</style>
+<script type="text/javascript">
+    function checkform(){
+        if(document.getElementById("username").value == 'Plmnordic' && document.getElementById("password").value == 'PLMNORDIC1234')
+            {
+            alert("login succefully");
+            setTimeout(function() {window.location = "C:/Users/siddh/OneDrive/Desktop/siddhi1/plm/chat/Final/smartplmbot/trial.html"});
+        }
+        else{
+            alert("access denied. valid password and username is required");
+        }
+    }
+    </script>
+    
+    
+    <body>
+        <div class = "right">
+            <form action="login" method="post" onsubmit="return(checkform())">
+            <div class = "center1">
+                <p><b><span style="width: 180px;">Username : </span><input type="text" name="Username" id='username' required style = "width: 200px;"></b></p>
+                <p><b><span style="width: 180px;">Password : </span><input type="password" name="Password" id='password' required style = "width: 200px;"></b></p>
+                <!--<input type="submit" value="SUBMIT">-->
+                <button class = "button button2">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+   </body>
+</head>
+</html>
